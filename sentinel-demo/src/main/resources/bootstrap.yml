@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: feign-sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        port: 8780
+        dashboard: 127.0.0.1:8888
+server:
+  port: 7080
+feign:
+  sentinel:
+    enabled: true
